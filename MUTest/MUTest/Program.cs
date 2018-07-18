@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using MUTest.MuThread;
 using MUTest.DelegateTest;
+using MUTest.MuAttribute;
 
 namespace MUTest
 {
@@ -15,7 +16,11 @@ namespace MUTest
             //线程测试
             //ExecuteThread _Thread = new ExecuteThread(1000);
 
-            TestMuTestDeleagate();
+            //TestMuTestDeleagate();
+
+            //MapManager.GetInstance();
+
+            TCPCmdHandlerMgr.Instance().Start();
 
             Console.ReadLine();
         }
